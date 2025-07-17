@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Head from 'next/head';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,9 +25,32 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <title>Emmanuel Ojo | Portfolio</title>
+        <meta name="description" content="Portfolio website for Emmanuel Ojo - Developer, Machine Learning Enthusiast, and Problem Solver." />
+        <meta property="og:title" content="Emmanuel Ojo | Portfolio" />
+        <meta property="og:description" content="Portfolio website for Emmanuel Ojo - Developer, Machine Learning Enthusiast, and Problem Solver." />
+        <meta property="og:image" content="/profile.jpg" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://EmmanuelOjo.com" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Emmanuel Ojo | Portfolio" />
+        <meta name="twitter:description" content="Portfolio website for Emmanuel Ojo - Developer, Machine Learning Enthusiast, and Problem Solver." />
+        <meta name="twitter:image" content="/profile.jpg" />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX');
+          `,
+        }} />
         {children}
       </body>
     </html>
