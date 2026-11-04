@@ -7,7 +7,7 @@ A modern, responsive portfolio website built with Next.js 15, React 19, and Fram
 - **Modern Design**: Clean, responsive design with smooth animations
 - **Interactive Sections**: Hero, Skills, Projects, and Contact pages
 - **AI/ML Projects**: Showcase of machine learning and deep learning projects
-- **Contact Form**: Integrated email functionality with Formspree
+- **Contact**: Email link on the contact page
 - **Smooth Animations**: Powered by Framer Motion
 - **Mobile Responsive**: Optimized for all device sizes
 
@@ -16,7 +16,7 @@ A modern, responsive portfolio website built with Next.js 15, React 19, and Fram
 - **Frontend**: Next.js 15, React 19, TypeScript
 - **Styling**: Tailwind CSS
 - **Animations**: Framer Motion
-- **Contact**: Formspree integration
+- **Contact**: Email link (mailto) on the contact page
 - **Deployment**: Ready for Vercel/Netlify
 
 ## 📁 Project Structure
